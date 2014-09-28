@@ -1,0 +1,55 @@
+
+.gridRow {
+	height: 30px;
+	background-color: #fff8ca;
+	border: 1px solid black;
+	border-collapse: collapse;
+	color: navy;
+	padding: 2px;
+	text-overflow: ellipsis;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.grid {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.headerRow {
+	background-color: #e2e8ec;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.selectedRow {
+	background-color: #467a9b;
+	color: white;
+}
+
+.pageSwitch {
+	font-size: 25px;
+	background-color: #005479;
+	border: 1px solid white;
+	color: white;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	cursor: pointer;
+}
+
+.summaryRow {
+	background-color: #e2e8ec;
+	height: 45px;
+	color: black;
+	font-weight: bold;
+	padding: 2px;
+	padding-top: 5px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}

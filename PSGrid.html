@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>PSGrid Example</title>
+        <script src="PSGrid.js"></script>
+        <link href="PSGrid.css" rel="stylesheet">
+        <script>
+            function createGrid(){
+                var grid = new PSGrid({
+                    /*
+                        Maximum rows count displayed on one page
+                    */
+                    rowsCount: 1,
+                    /*
+                        Columns description, title, key, width and align
+                    */
+                    columns: [
+                        {
+                            label: 'First name',
+                            key: 'firstName',
+                            width: '150px',
+                            align: 'center'
+                        },
+                        {
+                            label: 'Last name',
+                            key: 'lastName',
+                            width: '200px',
+                            align: 'center'
+                        },
+                    ],
+                    /*
+                        Data with keys as defined in columns description
+                    */
+                    data: [
+                        {
+                            firstName: 'Pavel',
+                            lastName: 'Savinov'
+                        },
+                        {
+                            firstName: 'Ricardo',
+                            lastName: 'Carvallo'
+                        },
+                        {
+                            firstName: 'John',
+                            lastName: 'Smith'
+                        }
+                    ],
+                    /*
+                        OnSelect event processor function (optional)
+                    */
+                    select: function (row) {
+                        alert(row.firstName);
+                    }
+                });
+                /*
+                    Render to the specified div by ID
+                */
+                grid.render("gridTarget");
+            }
+        </script>
+    </head>
+    <body onload="createGrid();">
+        <div id="gridTarget">
+        </div>
+    </body>
+</html>
